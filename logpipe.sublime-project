@@ -1,0 +1,14 @@
+{
+  "folders":
+  [
+    {
+      "follow_symlinks": true,
+      "binary_file_patterns": ["coverage/*", "dist/*", "node_modules/*", "*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
+      "path": "."
+    }
+  ],
+  "settings": {
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true
+  }
+}
