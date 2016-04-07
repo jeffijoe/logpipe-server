@@ -21,6 +21,14 @@ class LogsStore {
       'newLog',
       newLog => this.logs.unshift({...newLog, id: __id++ })
     );
+
+    this.fetchLogs();
+  }
+
+  fetchLogs() {
+    fetch('/api/logs').then(r => r.json()).then(newLogs => {
+      this.logs = newLogs;
+    });
   }
 }
 
