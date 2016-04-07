@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"filter",
+				"filterLogs"
+			],
+			[
+				"logs",
+				"logsToReturn"
+			],
+			[
+				"take",
+				"takeWhile"
+			],
+			[
 				"user",
 				"userUid"
 			],
@@ -502,23 +514,27 @@
 			[
 				"uo",
 				"uowFactory"
-			],
-			[
-				"clips",
-				"clipsApi"
-			],
-			[
-				"clip",
-				"clipsRepository"
-			],
-			[
-				"murd",
-				"murdererInstance"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "src/frontend/app/index.js",
+			"settings":
+			{
+				"buffer_size": 143,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/frontend/app/App.jsx",
+			"settings":
+			{
+				"buffer_size": 213,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -527,21 +543,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 275.0,
-		"last_filter": "push",
+		"height": 354.0,
+		"last_filter": "install",
 		"selected_items":
 		[
 			[
-				"push",
-				"Git: Push"
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Comm",
+				"Git: Commit"
 			],
 			[
 				"ad..",
 				"Git: Add..."
 			],
 			[
-				"Comm",
-				"Git: Commit"
+				"push",
+				"Git: Push"
 			],
 			[
 				"pull",
@@ -872,10 +892,6 @@
 				"Glue - Launch"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"quick",
 				"Git: Quick Commit"
 			],
@@ -958,8 +974,44 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/D/Projects/logpipe",
+		"/D/Projects/logpipe/src",
+		"/D/Projects/logpipe/src/backend/util",
+		"/D/Projects/logpipe/src/backend/views",
+		"/D/Projects/logpipe/src/frontend",
+		"/D/Projects/logpipe/src/frontend/app"
+	],
 	"file_history":
 	[
+		"/D/Projects/logpipe/src/frontend/app/App.styl",
+		"/D/Projects/logpipe/src/frontend/webpack.config.js",
+		"/D/Projects/logpipe/src/backend/views/index.js",
+		"/D/Projects/logpipe/src/frontend/app/App.jsx",
+		"/D/Projects/logpipe/src/frontend/app/index.js",
+		"/D/Projects/logpipe/src/frontend/.babelrc",
+		"/D/Projects/logpipe/.babelrc",
+		"/D/Projects/logpipe/src/backend/middleware/webpackDevServer.js",
+		"/D/Projects/logpipe/package.json",
+		"/D/Projects/logpipe/src/lib/createServer.js",
+		"/D/Projects/logpipe/src/middleware/webpackDevServer.js",
+		"/D/Projects/logpipe/src/bin/logpipe.js",
+		"/D/Projects/logpipe/src/app/.babelrc",
+		"/D/Projects/logpipe/src/views/index.js",
+		"/D/Projects/logpipe/src/app/index.js",
+		"/D/Projects/logpipe/src/app/webpack.config.js",
+		"/D/Projects/logpipe/src/util/safeNumber.js",
+		"/D/Projects/logpipe/src/bin/dev.js",
+		"/D/Projects/logpipe/src/api/logs.js",
+		"/D/Projects/logpipe/src/middleware/responseCalls.js",
+		"/D/Projects/logpipe/src/app/index.html",
+		"/D/Projects/logpipe/.eslintrc",
+		"/D/Projects/logpipe/bin/logpipe.js",
+		"/D/Projects/logpipe/bin/dev.js",
+		"/D/Projects/skyclip-api/.eslintrc",
+		"/D/Projects/logpipe/.gitignore",
+		"/D/Projects/logpipe/logpipe.sublime-project",
 		"/D/Projects/skyclip-api/src/middleware/errorHandler.js",
 		"/D/Projects/skyclip-api/env.yaml",
 		"/D/Projects/skyclip-api/test/middleware/errorHandler.spec.js",
@@ -1060,34 +1112,7 @@
 		"/D/Projects/skyclip-api/noo.js",
 		"/D/Projects/skyclip-api/src/oauth2/scope.js",
 		"/D/Projects/skyclip-api/src/bin/_babel.js",
-		"/D/Projects/skyclip-api/src/services/cache.js",
-		"/D/Projects/skyclip-api/test/integration/authMiddlewares.spec.js",
-		"/D/Projects/skyclip-api/dist-test/integration/authMiddlewares.spec.js",
-		"/D/Projects/skyclip-api/src/oauth2/validateClientScope.js",
-		"/D/Projects/skyclip-api/.eslintrc",
-		"/D/Projects/skyclip-api/node_modules/require-stack/src/index.js",
-		"/D/Projects/skyclip-api/test/integration/oauth2.spec.js",
-		"/D/Projects/skyclip-api/src/middleware/responseCalls.js",
-		"/D/Projects/skyclip-api/src/bin/server.js",
-		"/D/Projects/skyclip-api/src/oauth2/token.js",
-		"/d/Projects/skyclip-api/src/seeds/init_seed.js",
-		"/d/Projects/skyclip-api/src/migrations/init_migration.js",
-		"/d/Projects/skyclip-api/src/repositories/postgres/index.js",
-		"/d/Projects/skyclip-api/src/lib/configureContainer.js",
-		"/d/Projects/skyclip-api/src/lib/createServer.js",
-		"/d/Projects/skyclip-api/src/lib/configureAuth.js",
-		"/d/Projects/skyclip-api/src/middleware/auth.js",
-		"/d/Projects/skyclip-api/src/api/clips.js",
-		"/d/Projects/skyclip-api/package.json",
-		"/D/Dropbox/Jeff Todd/xSky Info for Skype App directory.xml",
-		"/d/Projects/skyclip-api/test/integration/oauthTokens.spec.js",
-		"/d/Projects/skyclip-api/src/middleware/oauth2Server.js",
-		"/d/Projects/skyclip-api/src/middleware/responseCalls.js",
-		"/d/Projects/skyclip-api/src/middleware/errorHandler.js",
-		"/d/Projects/skyclip-api/.gitignore",
-		"/d/Projects/skyclip-api/test/_helpers/createServer.js",
-		"/d/Projects/skyclip-api/src/middleware/responseTime.js",
-		"/d/Projects/skyclip-api/src/lib/env.js"
+		"/D/Projects/skyclip-api/src/services/cache.js"
 	],
 	"find":
 	{
@@ -1152,6 +1177,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"logsToReturn",
+			"logsToFilterToReturn",
+			"logs",
+			"from",
+			"offset",
 			"apiClientRepo",
 			"apiClipRepo",
 			"userRepo",
@@ -1274,12 +1304,7 @@
 			"getTodos",
 			"resolveTokens",
 			"####",
-			"-------------------------------",
-			"globPattern",
-			"createContainer",
-			"AwilixResolutionError",
-			"readyTokens",
-			"AwilixResolutionError"
+			"-------------------------------"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1316,8 +1341,183 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/frontend/app/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/frontend/app/App.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1356,6 +1556,10 @@
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 210.0
+	},
 	"pinned_build_system": "",
 	"project": "logpipe.sublime-project",
 	"replace":
@@ -1370,6 +1574,22 @@
 		"selected_items":
 		[
 			[
+				"view",
+				"src\\backend\\views\\index.js"
+			],
+			[
+				"logpi",
+				"src\\bin\\logpipe.js"
+			],
+			[
+				"res",
+				"src\\middleware\\responseCalls.js"
+			],
+			[
+				"resp",
+				"src\\middleware\\responseCalls.js"
+			],
+			[
 				"eror",
 				"test\\middleware\\errorHandler.spec.js"
 			],
@@ -1380,10 +1600,6 @@
 			[
 				"errorh",
 				"src\\middleware\\errorHandler.js"
-			],
-			[
-				"resp",
-				"src\\middleware\\responseTime.js"
 			],
 			[
 				"packa",
@@ -1868,18 +2084,6 @@
 			[
 				"createcont",
 				"test\\lib\\createContainer.spec.js"
-			],
-			[
-				"conta",
-				"src\\lib\\createContainer.js"
-			],
-			[
-				"getm",
-				"src\\lib\\getModules.js"
-			],
-			[
-				"compo",
-				"src\\lib\\compositionRoot.js"
 			]
 		],
 		"width": 0.0

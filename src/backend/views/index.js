@@ -6,14 +6,12 @@ const html = `<!DOCTYPE html>
   <title>Logpipe</title>
 </head>
 <body>
-  Hello!
+  <div id="app" />
   <script src="/socket.io/socket.io.js"></script>
   <script>
-    var socket = io('http://localhost:4321');
-    socket.on('newLog', function (data) {
-      console.log('i got a big log', data);
-    });
+    window.socket = io();
   </script>
+  <script src="/bundle.js"></script>
 </body>
 </html>
 `;

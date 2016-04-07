@@ -22,6 +22,10 @@ export default async function createServer(opts) {
   const router = new KoaRouter();
   let io;
 
+  // TODO: Environmentize this
+  const devServer = require('../middleware/webpackDevServer').default;
+  devServer(app);
+
   app.use(convert(bodyParser()));
   app.use(responseCalls);
 
