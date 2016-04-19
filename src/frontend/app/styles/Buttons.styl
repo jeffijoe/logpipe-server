@@ -1,0 +1,29 @@
+@import '~Variables.styl'
+
+buttonStyle(bg, color)
+  background-color bg
+  background bg
+  border-color darken(bg, 5%)
+  color color
+  &:hover
+    background-color lighten(bg, 10%)
+
+.button
+  border 1px solid
+  color #fff
+  font-size 0.8em
+  buttonPadding(1)
+  text-transform uppercase
+  font-weight 600
+  letter-spacing 0.12em
+  cursor pointer
+  border-radius 2px
+  transition all 0.4s
+
+.buttonDefault
+  composes button
+  buttonStyle(defaultButtonBg, #111)
+
+.buttonPrimary
+  composes button
+  buttonStyle(primaryButtonBg, #fff)

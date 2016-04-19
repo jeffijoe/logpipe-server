@@ -1,8 +1,26 @@
+@import '~Variables.styl';
+@import '~styles/Buttons.styl';
 .header
-  background-color #FF1744
+  background linear-gradient(bottom, brandPrimary, brandPrimaryLight);
   color #fff
-  padding: 20px 10px
+  padding: 10px 10px
+  box-shadow 0 2px 4px rgba(0,0,0,0.4)
+  border-bottom 1px solid brandPrimaryDark
+  display flex
+  align-items center
 
 .brand
-  font-weight 600
+  font-weight 400
   text-transform uppercase
+  font-size 1.4em
+  flex 0 0 auto
+
+.mainActions
+  // width 100%
+  flex 1 1 auto
+
+.rightActions
+  flex 0 0 auto
+
+.clearLogsButton
+  composes buttonDefault

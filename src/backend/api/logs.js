@@ -1,7 +1,7 @@
 import takeWhile from 'lodash/takewhile';
 import safeNumber from '../util/safeNumber';
 
-const logs = [];
+let logs = [];
 
 /**
  * Filters our logs.
@@ -16,9 +16,8 @@ function filterLogs(filter, logsToFilter) {
     log => (
       log.ts >= filter.from
         && log.ts <= filter.to
-        && log.msg.toUpperCase().indexOf(filter.q.toUpperCase()) > -1
     )
-  );
+  ).filter(log => log.msg.toUpperCase().indexOf(filter.q.toUpperCase()) > -1);
 
   return logsToFilter;
 }
@@ -33,9 +32,17 @@ export function getLogs(ctx) {
     to: q.to ? safeNumber(q.to) : 99999999999999,
     q: q.q || ''
   };
-  console.log('filter', filter);
 
   ctx.ok(filterLogs(filter, logs));
+}
+
+/**
+ * Clears the logs.
+ */
+export function clearLogs(ctx) {
+  logs = [];
+  ctx.ok();
+  ctx.io.emit('clearLogs');
 }
 
 /**
@@ -82,5 +89,9 @@ export default function (router) {
     .post(
       '/api/logs',
       addLog
+    )
+    .delete(
+      '/api/logs',
+      clearLogs
     );
 }
