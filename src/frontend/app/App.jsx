@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.styl';
-import Header from './components/Header/Header.jsx';
-import LogsView from './components/LogsView/LogsView.jsx';
+import Header from './components/Header';
+import LogsView from './components/LogsView';
 import logsStore from './stores/LogsStore';
 
 /**

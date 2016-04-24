@@ -5,9 +5,12 @@ import cx from 'classnames';
 export const LogEntry = ({log}) => (
   <div className={cx(
     styles.logEntry,
-    styles[log.lvl]
+    styles[log.level]
   )}>
-    <span className={styles.message}>{log.msg}</span>
+    <div className={styles.message}>{log.message}</div>
+    <div className={styles.timeStamp}>
+      {log.timestamp.format('LL LT')}
+    </div>
   </div>
 );
 

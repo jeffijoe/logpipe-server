@@ -1,6 +1,19 @@
 import { observable, computed } from 'mobx';
+import LogEntry from '../domain/LogEntry';
+import sample from 'lodash/sample';
 
-let __id = 1;
+function getRandomLog() {
+  return sample([{
+    lvl: 'error',
+    msg: 'A serious error occured, bro..'
+  }, {
+    lvl: 'warn',
+    msg: 'Not that serious..'
+  }, {
+    lvl: 'info',
+    msg: 'Just a heads up here!'
+  }]);
+}
 
 class LogsStore {
   @observable logs = [];
@@ -12,7 +25,7 @@ class LogsStore {
     this.socket = socket;
     this.socket.on(
       'newLog',
-      newLog => this.logs.unshift({...newLog, id: __id++ })
+      newLog => this.logs.unshift(new LogEntry({...newLog }))
     );
     this.socket.on(
       'clearLogs',
@@ -20,6 +33,10 @@ class LogsStore {
     );
 
     this.fetchLogs();
+
+    setInterval(() => {
+      this.sendTestLog(getRandomLog());
+    }, 1000);
   }
 
   @computed get hasLogs() {
@@ -28,7 +45,7 @@ class LogsStore {
 
   fetchLogs() {
     fetch('/api/logs').then(r => r.json()).then(newLogs => {
-      this.logs = newLogs;
+      this.logs = newLogs.map(x => new LogEntry(x));
     });
   }
 

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"class",
+				"className"
+			],
+			[
+				"take",
+				"takeWhile"
+			],
+			[
 				"c",
 				"components"
 			],
@@ -14,10 +22,6 @@
 			[
 				"logs",
 				"logsToReturn"
-			],
-			[
-				"take",
-				"takeWhile"
 			],
 			[
 				"user",
@@ -510,52 +514,40 @@
 			[
 				"deb",
 				"debugPort"
-			],
-			[
-				"ins",
-				"inspectorRunning"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/frontend/app/components/LogEntry/LogEntry.styl",
+			"file": "src/frontend/app/components/LogsView/index.jsx",
 			"settings":
 			{
-				"buffer_size": 357,
+				"buffer_size": 476,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/frontend/app/components/LogsView/LogsView.styl",
+			"file": "src/frontend/app/App.jsx",
 			"settings":
 			{
-				"buffer_size": 25,
+				"buffer_size": 437,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/frontend/app/components/LogsView/LogsView.jsx",
+			"file": "src/frontend/app/styles/Buttons.styl",
 			"settings":
 			{
-				"buffer_size": 355,
+				"buffer_size": 527,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/frontend/app/stores/LogsStore.js",
+			"file": "src/frontend/app/components/LogsView/NoLogs.styl",
 			"settings":
 			{
-				"buffer_size": 629,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/frontend/app/components/LogEntry/LogEntry.jsx",
-			"settings":
-			{
-				"buffer_size": 292,
+				"buffer_size": 456,
 				"line_ending": "Windows"
 			}
 		}
@@ -567,17 +559,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 95.0,
-		"last_filter": "ad..",
+		"height": 275.0,
+		"last_filter": "push",
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"Comm",
+				"Git: Commit"
+			],
 			[
 				"ad..",
 				"Git: Add..."
 			],
 			[
-				"Comm",
-				"Git: Commit"
+				"spaces",
+				"Indentation: Convert to Spaces"
 			],
 			[
 				"pull",
@@ -586,10 +586,6 @@
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"push",
-				"Git: Push"
 			],
 			[
 				"babel",
@@ -1000,17 +996,26 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Projects/logpipe",
-		"/D/Projects/logpipe/src",
-		"/D/Projects/logpipe/src/frontend",
-		"/D/Projects/logpipe/src/frontend/app",
-		"/D/Projects/logpipe/src/frontend/app/components",
-		"/D/Projects/logpipe/src/frontend/app/components/LogEntry",
-		"/D/Projects/logpipe/src/frontend/app/components/LogsView",
-		"/D/Projects/logpipe/src/frontend/app/stores"
+		"/D/Projects/logpipe-server",
+		"/D/Projects/logpipe-server/src"
 	],
 	"file_history":
 	[
+		"/D/Projects/logpipe-server/src/frontend/app/Variables.styl",
+		"/D/Projects/logpipe-server/src/frontend/app/components/LogsView/NoLogs.styl",
+		"/D/Projects/logpipe-server/src/frontend/app/styles/Buttons.styl",
+		"/D/Projects/logpipe-server/src/frontend/app/components/Header/Header.jsx",
+		"/D/Projects/logpipe-server/src/frontend/app/App.jsx",
+		"/D/Projects/logpipe-server/src/frontend/app/stores/LogsStore.js",
+		"/D/Projects/logpipe-server/src/frontend/app/components/Header/Header.styl",
+		"/D/Projects/logpipe-server/src/backend/api/logs.js",
+		"/D/Projects/logpipe-server/src/frontend/app/App.styl",
+		"/D/Projects/logpipe-server/src/frontend/app/components/LogsView/LogsView.jsx",
+		"/D/Projects/logpipe-server/src/frontend/app/components/LogsView/NoLogs.jsx",
+		"/D/Projects/logpipe-server/src/frontend/app/components/LogsView/LogsView.styl",
+		"/D/Projects/logpipe-server/src/frontend/app/components/LogEntry/LogEntry.jsx",
+		"/D/Projects/logpipe-server/src/frontend/.babelrc",
+		"/D/Projects/logpipe-server/src/frontend/app/components/LogEntry/LogEntry.styl",
 		"/D/Projects/logpipe/src/frontend/app/App.styl",
 		"/D/Projects/logpipe/src/frontend/app/components/LogEntry/LogEntry.styl",
 		"/D/Projects/logpipe/src/frontend/app/components/LogEntry/LogEntry.jsx",
@@ -1123,22 +1128,7 @@
 		"/D/Projects/Work/BookingPortal/Src/BookingPortal/Web/BookingPortal.Web/App/src/util/resource-slot-util.js",
 		"/D/Projects/Work/BookingPortal/Src/BookingPortal/Web/BookingPortal.Web/App/src/modules/offerings/offering-page/views/booking-info-host/resource-booking-info/resource-booking-grid-filter-view/resource-booking-grid-filter.less",
 		"/D/Projects/Work/BookingPortal/Src/BookingPortal/Web/BookingPortal.Web/App/src/modules/offerings/offering-page/views/booking-info-host/resource-booking-info/resource-booking-grid-filter-view/resource-booking-grid-filter.jade",
-		"/D/Projects/skyclip-api/src/errors/validation.js",
-		"/D/Projects/skyclip-api/src/utils/setIfExists.js",
-		"/D/Projects/skyclip-api/test/utils/setIfExists.spec.js",
-		"/D/Projects/skyclip-api/test/utils/rewrite.spec.js",
-		"/D/Projects/skyclip-api/src/migrations/init_migration.js",
-		"/D/Projects/skyclip-api/test/_helpers/createServer.js",
-		"/D/Projects/skyclip-api/test/_helpers/time.js",
-		"/D/Projects/skyclip-api/.babelrc",
-		"/D/Projects/skyclip-api/src/repositories/postgres/apiClientRepo.js",
-		"/D/Projects/skyclip-api/src/services/authorizationManager.js",
-		"/D/Projects/skyclip-api/node_modules/babel-runtime/node_modules/core-js/library/modules/es6.promise.js",
-		"/D/Projects/skyclip-api/src/middleware/notFoundHandler.js",
-		"/D/Projects/skyclip-api/test/_helpers/tokenRequestHelper.js",
-		"/D/Projects/skyclip-api/src/utils/oauthUtils.js",
-		"/D/Projects/skyclip-api/test/e2e/oauth2.spec.js",
-		"/D/Projects/skyclip-api/test/e2e/authMiddlewares.spec.js"
+		"/D/Projects/skyclip-api/src/errors/validation.js"
 	],
 	"find":
 	{
@@ -1203,6 +1193,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"logs",
+			"Logs",
+			"logs",
+			"onClickCearLogs",
+			"2em",
+			"filter",
 			"div",
 			"logsToReturn",
 			"logsToFilterToReturn",
@@ -1324,13 +1320,7 @@
 			"`",
 			"values",
 			"Env",
-			"env",
-			"Env",
-			"env",
-			"Container",
-			"getTodos",
-			"resolveTokens",
-			"####"
+			"env"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1367,24 +1357,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/frontend/app/components/LogEntry/LogEntry.styl",
+					"file": "src/frontend/app/components/LogsView/index.jsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 357,
+						"buffer_size": 476,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								357,
-								357
+								139,
+								139
 							]
 						],
 						"settings":
@@ -1392,6 +1382,31 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1402,140 +1417,28 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/frontend/app/components/LogsView/LogsView.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10,
-								10
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1545,20 +1448,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/frontend/app/components/LogsView/LogsView.jsx",
+					"buffer": 1,
+					"file": "src/frontend/app/App.jsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 355,
+						"buffer_size": 437,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								316,
-								316
+								175,
+								175
 							]
 						],
 						"settings":
@@ -1566,6 +1469,31 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1576,51 +1504,26 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
@@ -1632,20 +1535,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/frontend/app/stores/LogsStore.js",
+					"buffer": 2,
+					"file": "src/frontend/app/styles/Buttons.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 629,
+						"buffer_size": 527,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								259,
-								259
+								300,
+								300
 							]
 						],
 						"settings":
@@ -1653,6 +1556,31 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1663,78 +1591,53 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "src/frontend/app/components/LogEntry/LogEntry.jsx",
+					"buffer": 3,
+					"file": "src/frontend/app/components/LogsView/NoLogs.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 292,
+						"buffer_size": 456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								236,
-								236
+								435,
+								435
 							]
 						],
 						"settings":
@@ -1742,6 +1645,31 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1752,56 +1680,33 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1862,6 +1767,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"but",
+				"src\\frontend\\app\\styles\\Buttons.styl"
+			],
+			[
+				"bu",
+				"src\\frontend\\app\\styles\\Buttons.styl"
+			],
 			[
 				"app",
 				"src\\frontend\\app\\App.styl"
@@ -2365,14 +2278,6 @@
 			[
 				"resource-editor",
 				"src\\modules\\resources\\views\\resource-editor-view\\resource-editor.jade"
-			],
-			[
-				"core",
-				"src\\core\\core.less"
-			],
-			[
-				"env.",
-				"env.yaml"
 			]
 		],
 		"width": 0.0
