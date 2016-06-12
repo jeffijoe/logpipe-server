@@ -5,7 +5,11 @@ import sample from 'lodash/sample';
 function getRandomLog() {
   return sample([{
     lvl: 'error',
-    msg: 'A serious error occured, bro..'
+    msg: 'A serious error occured, bro..',
+    data: {
+      message: 'some error',
+      stack: ['at some/file.js:123']
+    }
   }, {
     lvl: 'warn',
     msg: 'Not that serious..'
@@ -34,9 +38,9 @@ class LogsStore {
 
     this.fetchLogs();
 
-    setInterval(() => {
-      this.sendTestLog(getRandomLog());
-    }, 1000);
+    // setInterval(() => {
+    //   this.sendTestLog(getRandomLog());
+    // }, 1000);
   }
 
   @computed get hasLogs() {

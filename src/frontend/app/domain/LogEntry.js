@@ -8,6 +8,8 @@ export default class LogEntry {
   @observable message;
   @observable level;
   @observable timestamp;
+  @observable data;
+  @observable expanded = false;
 
   /**
    * Constructor.
@@ -17,7 +19,12 @@ export default class LogEntry {
       id: attrs.id,
       message: attrs.msg,
       level: attrs.lvl,
-      timestamp: moment(attrs.ts)
+      timestamp: moment(attrs.ts),
+      data: attrs.data
     });
+  }
+
+  toggleDetails() {
+    this.expanded = !this.expanded;
   }
 }

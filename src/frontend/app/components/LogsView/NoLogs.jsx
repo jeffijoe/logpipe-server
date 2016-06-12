@@ -15,7 +15,7 @@ const BigButton = ({className, children, ...props}) => (
   </button>
 );
 
-const TEST_LOG = '{"msg": "Hello world!", "lvl":"info"}';
+const TEST_LOG = '{"msg": "Hello world!", "lvl": "info", "data": {"more": "stuff"} }';
 
 /**
  * Shown when there are no logs.
@@ -23,7 +23,7 @@ const TEST_LOG = '{"msg": "Hello world!", "lvl":"info"}';
 const NoLogs = ({ onSendTestLogClick }) => (
   <div className={styles.noLogs}>
     <h3 className={styles.title}>
-      No logs... yet!
+      Welcome to Logpipe, your neighbourhood-friendly development logger!
     </h3>
     <div className={styles.description}>
       Try running a <code>POST /api/logs</code> with a body of.. Oh I dunno..

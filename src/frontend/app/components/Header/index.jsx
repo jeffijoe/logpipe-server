@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.styl';
-
+import { observer } from 'mobx-react';
 
 const Header = ({onClickClearLogs}) => (
   <header className={styles.header}>
@@ -18,4 +18,4 @@ const Header = ({onClickClearLogs}) => (
   </header>
 );
 
-export default Header;
+export default observer(Header);
