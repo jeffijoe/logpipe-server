@@ -2,7 +2,7 @@ import styles from './LogsView.styl';
 import React from 'react';
 import { observer } from 'mobx-react';
 import LogEntry from '../LogEntry';
-import NoLogs from './NoLogs.jsx';
+import NoLogs from './NoLogs';
 import LogBuffer from './LogBuffer';
 
 export const LogsView = ({ store }) => (
