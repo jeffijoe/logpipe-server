@@ -9,12 +9,17 @@
   border-bottom 1px solid brandPrimaryDark
   display flex
   align-items center
+  position fixed
+  width 100%
+  top 0
+  left 0
 
 .brand
   font-weight 400
   text-transform uppercase
   font-size 1.4em
   flex 0 0 auto
+  padding-right 20px
 
 .mainActions
   // width 100%
@@ -23,5 +28,11 @@
 .rightActions
   flex 0 0 auto
 
+.headerButton
+  composes buttonFlat-light
+
+.bufferButton
+  composes headerButton
+
 .clearLogsButton
-  composes buttonDefault
+  composes headerButton

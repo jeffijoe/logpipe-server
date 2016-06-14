@@ -1,8 +1,16 @@
 // Note: Webpack uses vm.runInThisContext,
 // so ES7 is not allowed.
-const webpack = require('webpack');
-
 const path = require('path');
+const webpack = require('webpack');
+const filter = require('lodash/fp/filter');
+const identity = require('lodash/fp/identity');
+
+const clean = filter(identity);
+
+const packageInfo = require(path.join(__dirname, '../../package.json'));
+
+const prod = process.argv.indexOf('--production') > -1;
+const dev = !prod;
 
 // TODO: Environmentize
 module.exports = {
@@ -20,8 +28,17 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    dev && new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      process: {
+        env: {
+          NODE_ENV: JSON.stringify(prod ? 'production' : 'development'),
+          APP_HOMEPAGE_URL: JSON.stringify(packageInfo.homepage),
+          APP_VERSION: JSON.stringify(packageInfo.version)
+        }
+      }
+    })
   ],
   module: {
     loaders: [{

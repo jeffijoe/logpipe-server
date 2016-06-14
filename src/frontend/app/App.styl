@@ -2,6 +2,10 @@
 @import './Variables.styl';
 global-reset()
 
+*
+  box-sizing border-box
+  font-family fontFamily
+
 /**
  * Typography
  */
@@ -10,10 +14,11 @@ html
 
 body
   background-color #f5f5f5
-  font-family 'Roboto', arial, helvetica, sans-serif
   font-weight: 400;
   line-height: 1.45;
-
+  position relative
+  padding-top 50px
+  font-family fontFamily
 p
   margin-bottom 1.3em
 
@@ -37,3 +42,6 @@ h4
 
 small
   font-size 0.707em
+
+a
+  color linkColor

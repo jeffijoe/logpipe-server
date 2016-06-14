@@ -11,14 +11,15 @@ buttonStyle(bg, color)
 .button
   border 1px solid
   color #fff
-  font-size 0.8em
-  buttonPadding(1)
+  font-size 0.85em
+  buttonPadding(0.8)
   text-transform uppercase
-  font-weight 500
+  font-weight 600
   letter-spacing 0.12em
   cursor pointer
-  border-radius 2px
+  border-radius 50px
   transition all 0.4s
+  outline none
 
 .buttonDefault
   composes button
@@ -27,3 +28,13 @@ buttonStyle(bg, color)
 .buttonPrimary
   composes button
   buttonStyle(primaryButtonBg, #fff)
+
+.buttonFlat
+  composes button
+  background-color transparent
+  border none
+  color #141414
+
+.buttonFlat-light
+  composes buttonFlat
+  color #fff

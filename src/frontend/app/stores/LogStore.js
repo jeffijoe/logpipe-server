@@ -1,6 +1,7 @@
-import { observable, computed } from 'mobx';
+import { observable, computed, action } from 'mobx';
 import LogEntry from '../domain/LogEntry';
 import sample from 'lodash/sample';
+import autobind from 'autobind-decorator';
 
 function getRandomLog() {
   return sample([{
@@ -19,8 +20,12 @@ function getRandomLog() {
   }]);
 }
 
-class LogsStore {
+@autobind
+class LogStore {
   @observable logs = [];
+  @observable logBuffer = [];
+
+  @observable isBuffering = false;
 
   /**
    * Constructor
@@ -29,18 +34,14 @@ class LogsStore {
     this.socket = socket;
     this.socket.on(
       'newLog',
-      newLog => this.logs.unshift(new LogEntry({...newLog }))
+      this.newLog.bind(this)
     );
     this.socket.on(
       'clearLogs',
-      () => { this.logs = []; }
+      this.onLogsCleared.bind(this)
     );
 
     this.fetchLogs();
-
-    // setInterval(() => {
-    //   this.sendTestLog(getRandomLog());
-    // }, 1000);
   }
 
   @computed get hasLogs() {
@@ -69,6 +70,27 @@ class LogsStore {
       method: 'DELETE'
     });
   }
+
+  @action newLog(newLog) {
+    (this.isBuffering ? this.logBuffer : this.logs).unshift(new LogEntry({...newLog }));
+  }
+
+  @action toggleBuffering() {
+    this.isBuffering = !this.isBuffering;
+    if (!this.isBuffering) {
+      this.flushLogBuffer();
+    }
+  }
+
+  @action flushLogBuffer() {
+    this.logs.unshift(...this.logBuffer.slice());
+    this.logBuffer.replace([]);
+  }
+
+  @action onLogsCleared() {
+    this.logs = [];
+    this.logBuffer = [];
+  }
 }
 
-export default new LogsStore({socket: window.socket});
+export default new LogStore({socket: window.socket});
