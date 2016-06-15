@@ -1,7 +1,9 @@
 import fs from 'fs';
+import path from 'path';
 import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 import convert from 'koa-convert';
+import serve from 'koa-static';
 import KoaRouter from 'koa-router';
 import logApi from '../api/logs';
 import responseCalls from '../middleware/responseCalls';
@@ -20,11 +22,15 @@ import indexView from '../views/index';
 export default async function createServer(opts) {
   const app = new Koa();
   const router = new KoaRouter();
-  let io;
+  const io = IO();
 
-  // TODO: Environmentize this
-  const devServer = require('../middleware/webpackDevServer').default;
-  devServer(app);
+  // Set by babel-plugin-defines
+  if (global.PRODUCTION) {
+    app.use(convert(serve(path.join(__dirname, '../public'))));
+  } else {
+    const devServer = require('../middleware/webpackDevServer').default;
+    devServer(app);
+  }
 
   app.use(convert(bodyParser()));
   app.use(responseCalls);
@@ -53,7 +59,16 @@ export default async function createServer(opts) {
     ctx.notFound({ message: 'Not found.' });
   });
 
-  let server = http.createServer(app.callback());
-  io = IO(server);
-  server.listen(opts.port);
+  const server = http.createServer(app.callback());
+  io.attach(server);
+  await new Promise((resolve, reject) => {
+    try {
+      server.listen(
+        opts.port,
+        (err) => err ? reject(err) : resolve(server)
+      );
+    } catch (err) {
+      reject(err);
+    }
+  });
 }

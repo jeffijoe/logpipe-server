@@ -32,7 +32,7 @@ const logs = [
 ];
 
 const getRandomLog = () => {
-  return logs[random(0, logs.length-1)];
+  return logs[random(0, logs.length - 1)];
 };
 
 const run = () => {

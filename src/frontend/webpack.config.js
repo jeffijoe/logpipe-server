@@ -11,23 +11,24 @@ const packageInfo = require(path.join(__dirname, '../../package.json'));
 
 const prod = process.argv.indexOf('--production') > -1;
 const dev = !prod;
+process.env.NODE_ENV = prod ? 'production' : 'development';
 
 // TODO: Environmentize
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: dev ? 'cheap-module-eval-source-map' : 'source-map',
   debug: true,
-  entry: [
+  entry: clean([
     'babel-polyfill',
-    'webpack-hot-middleware/client',
+    dev && 'webpack-hot-middleware/client',
     './src/frontend/app/index'
-  ],
+  ]),
   output: {
     // For production only
-    path: path.join(__dirname, '/../../dist/app'),
+    path: path.join(__dirname, '/../../dist/public'),
     filename: 'bundle.js',
     publicPath: '/'
   },
-  plugins: [
+  plugins: clean([
     dev && new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
@@ -39,7 +40,7 @@ module.exports = {
         }
       }
     })
-  ],
+  ]),
   module: {
     loaders: [{
       test: /\.jsx?$/,

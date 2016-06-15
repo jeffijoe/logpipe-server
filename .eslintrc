@@ -171,6 +171,7 @@
     "yoda": [2, "never"]
   },
   "globals": {
-    "console": true
+    "console": true,
+    "__VERSION__": true
   }
 }
